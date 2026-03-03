@@ -1,0 +1,204 @@
+# ============================================================
+# KNIGHT ABILITIES
+# ============================================================
+K001|Chivalry|description=Reaction: When an adjacent ally is attacked, Knight may become the new target instead.|tag=hero,knight,core|rarity=common
+K002|Hold the Line|description=Passive: Enemies engaged with Knight must spend +2" movement to disengage and cannot Dash.|tag=hero,knight,core|rarity=common
+K003|Defensive Guard|description=Action: Until next activation gain +2 Armor. Cannot move this turn.|tag=hero,knight|rarity=common
+K004|Taunt|description=Action: Target enemy within 4" must pass a Will roll or prioritize attacking Knight next activation.|tag=hero,knight|rarity=common
+K005|Shield Bash|description=Action: Melee attack. On hit, target rolls d20 + Health vs 12. On fail, apply Staggered (-1 Fight, -1 Move, -2 Shoot until end of next round).|tag=hero,knight|rarity=common
+K006|Intercept|description=Reaction: Once per round, when an enemy moves through Knight's engagement range, Knight may immediately make a melee attack.|tag=hero,knight|rarity=common
+K007|Phalanx Protection|description=Action: Move an ally within 2" directly behind Knight. Disengagement and engagement rules are ignored for this move.|tag=hero,knight|rarity=common
+
+# ============================================================
+# WARRIOR ABILITIES
+# ============================================================
+WA001|Power Strike|description=Action: Heavy melee attack. +2 bonus damage, -2 Fight.|tag=hero,warrior,core|rarity=common
+WA002|Cleave|description=Action: Attack primary target. On hit, deal half damage (rounded down) to all adjacent enemies.|tag=hero,warrior,core|rarity=common
+WA003|Leap|description=Action: Once per activation, move 2" in any direction ignoring difficult terrain. If ending engaged, gain +2 damage on next melee attack.|tag=hero,warrior|rarity=common
+WA004|Relentless|description=Passive: When reducing an enemy to 0 HP, move 2" or make a basic attack at -2 Fight.|tag=hero,warrior|rarity=common
+WA005|Riposte|description=Action: Once, before your next turn, if an enemy in base contact makes a melee attack, make one Fight attack against that enemy.|tag=hero,warrior|rarity=common
+WA006|Sword Bind|description=Reaction: Once per round, if the Warrior's attack misses, the enemy makes a Will roll. On fail, apply Exposed status (all attacks gain +1 Fight until next round).|tag=hero,warrior|rarity=common
+
+# ============================================================
+# MAGE ABILITIES
+# ============================================================
+MG001|Mana Focus|description=Passive: If you did not move this activation, gain a minor bonus (+1 Magic) to your next spell cast this turn.|tag=hero,mage,core|rarity=common
+MG002|Gust of Wind|description=Action: Template knockback + low damage. Pushes targets 2" away from center.|tag=hero,mage|rarity=common
+MG003|Levitate|description=Quick spell on self: ignore elevation penalties until end of turn. Charged: template area ignores elevation until end of turn.|tag=hero,mage|rarity=common
+MG004|Mystic Slip|description=Reaction: Once per round, when targeted by a melee attack, teleport 2".|tag=hero,mage|rarity=common
+
+# ============================================================
+# PRIEST ABILITIES
+# ============================================================
+PR001|Holy Bolt|description=Action: Single target, 4 holy damage.|tag=hero,priest,core|rarity=common
+PR002|Dark Pulse|description=Action: Single target, 4 dark damage.|tag=hero,priest,core|rarity=common
+PR003|Halo Aegis|description=Channel: Ally within 6" reduces incoming damage by 3 while maintained. Does not stack.|tag=hero,priest|rarity=common
+PR004|Deathmark|description=Channel: Enemy within 6" takes +2 damage from all sources while maintained.|tag=hero,priest|rarity=common
+PR005|Heal Aura|description=Channel: Small aura around Priest. Allies inside regain 2 HP each round.|tag=hero,priest|rarity=common
+PR006|Decay Aura|description=Channel: Small aura around Priest. Enemies inside take poison damage each round.|tag=hero,priest|rarity=common
+PR007|Cure|description=Action: Restore 4 HP. Charged also removes one minor status effect.|tag=hero,priest|rarity=common
+PR008|Drain|description=Action: Deal 3 dark damage and heal self for 3.|tag=hero,priest|rarity=common
+PR009|Cleanse|description=Action: Remove one status effect from an ally.|tag=hero,priest|rarity=uncommon
+PR010|Dark Purge|description=Action: Remove a status from an enemy and deal damage equal to the number of statuses removed.|tag=hero,priest|rarity=uncommon
+PR011|Holy Shield|description=Action: Reduce magical damage by 3 until next activation.|tag=hero,priest|rarity=uncommon
+PR012|Dark Shield|description=Action: Reduce physical damage by 3 until next activation.|tag=hero,priest|rarity=uncommon
+PR013|Resurrection|description=Charged action (once per encounter): Holy: return a downed ally at low HP. Dark: return ally with bonus power temporarily, collapses after 2 rounds.|tag=hero,priest|rarity=rare
+
+# ============================================================
+# SHADOW ABILITIES
+# ============================================================
+SH001|Backstab|description=Passive: If attacking an enemy who is unengaged and you are in their rear arc, deal +3 bonus damage.|tag=hero,shadow,core|rarity=common
+SH002|Poisoned Shot|description=Action: Ranged attack. On hit apply Poison status. If target fails Health check, Poison deals immediate 2 poison damage.|tag=hero,shadow,core|rarity=common
+SH003|Blur|description=Action: Next attack against you suffers -2 Fight.|tag=hero,shadow|rarity=common
+SH004|Smoke Veil|description=Action: Place 2" smoke zone. Until next round, units inside cannot be targeted by ranged attacks, and attacks inside suffer -2 Fight.|tag=hero,shadow|rarity=common
+SH005|Distract|description=Action: Target enemy must pass Will check or cannot target you next activation.|tag=hero,shadow|rarity=common
+SH006|Grappling Hook|description=Action: Pull self toward terrain, or pull an equal-or-smaller enemy 3" toward you.|tag=hero,shadow|rarity=uncommon
+SH007|Afterimage|description=Reaction: Once per round, when hit, teleport 2".|tag=hero,shadow|rarity=uncommon
+
+# ============================================================
+# WARDEN ABILITIES
+# ============================================================
+WD001|Marked Prey|description=Action: Ranged attack. On hit, target becomes Marked until next round. Allies gain +1 Move when moving toward a Marked target.|tag=hero,warden,core|rarity=common
+WD002|Pinning Shot|description=Action: Ranged attack. On hit, target cannot Dash next activation and loses 1 Move.|tag=hero,warden,core|rarity=common
+WD003|Snipe|description=Charged action (sacrifice movement): +2 Fight, +2 Damage. Ignores cover bonuses and damage reduction from equipment.|tag=hero,warden|rarity=common
+WD004|Camouflage|description=Passive: If you did not move this activation, ranged attacks against you suffer -2 Fight.|tag=hero,warden|rarity=common
+WD005|Overwatch|description=Action: Once, before your next turn, when an enemy moves within line of sight make a ranged attack at -2 Fight. Cannot trigger if engaged.|tag=hero,warden|rarity=common
+WD006|Ascend|description=Action (once per scenario): Until end of activation, ignore elevation penalties when moving and gain +1 Fight on next ranged attack if above target.|tag=hero,warden|rarity=uncommon
+WD007|Tracker's Insight|description=Passive: When attacking a target you hit last round, +1 Fight.|tag=hero,warden|rarity=common
+WD008|Evasive Roll|description=Reaction: Once per round, when targeted by a ranged attack, move 2" (must end in a legal position).|tag=hero,warden|rarity=uncommon
+
+# ============================================================
+# GEOMANCER ABILITIES
+# ============================================================
+GE001|Cloudstone|description=Spell: Create a 2" terrain piece within 6". Counts as light cover and elevated terrain (HP 5, Defense 10). Alternate: throw it for 4 damage, target Move -1 next activation.|tag=hero,geomancer,core|rarity=common
+GE002|Earth Slam|description=Action: Adjacent enemies roll d20 + Strength vs 12. On fail, pushed 2" and terrain becomes difficult (2" radius).|tag=hero,geomancer,core|rarity=common
+GE003|Grasp Ivy|description=Spell: On hit, target rolls Strength vs 12. Fail: Move becomes 0 next activation.|tag=hero,geomancer|rarity=common
+GE004|Berryblossom|description=Spell: Create 3 berry tokens in one 3" terrain within 2". Action to consume: heals 2 HP. Each token usable once.|tag=hero,geomancer|rarity=common
+GE005|Thornspike Wall|description=Spell: Create a 4" wall. Any unit that touches it takes 2 damage. Only 1 active wall at a time.|tag=hero,geomancer|rarity=common
+GE006|Move Mountains|description=Spell: Move a terrain piece no larger than 4" footprint up to 2". Cannot move objectives.|tag=hero,geomancer|rarity=uncommon
+GE007|Commune with Nature|description=Passive: Gain 2 HP if you moved less than 2" this activation.|tag=hero,geomancer|rarity=common
+GE008|Earthquake|description=Spell: 8" radius centered on self. All units in range roll Athletics. On fail, fall Prone (must spend 1 action to stand).|tag=hero,geomancer|rarity=rare
+
+# ============================================================
+# SPELLBLADE ABILITIES
+# ============================================================
+SB001|Elemental Shift|description=Passive: At the start of your turn you may switch active element (Fire, Ice, Lightning, Earth). Switching grants that element's Surge Bonus for this round only. Staying grants the passive effect.|tag=hero,spellblade,core|rarity=common
+SB002|Imbue Weapon|description=Spell: Choose an element to apply to an ally's weapon until next activation. Weapon deals elemental damage.|tag=hero,spellblade,core|rarity=common
+SB003|Spirit Lance|description=Spell: Non-elemental. Range 6". +1 Fight.|tag=hero,spellblade|rarity=common
+SB004|Curse|description=Spell: Target suffers -2 Defense until next activation.|tag=hero,spellblade|rarity=common
+SB005|Arcane Armor|description=Spell: Self or ally gains temporary HP until start of next activation.|tag=hero,spellblade|rarity=common
+SB006|Teleport|description=Spell (costs movement action): Move in any direction within 5".|tag=hero,spellblade|rarity=uncommon
+
+# ============================================================
+# BLACKGUARD ABILITIES
+# ============================================================
+BG001|Trade Blows|description=Before attacking, lose up to 3 HP to gain equal +Fight (max +3).|tag=hero,blackguard,core|rarity=common
+BG002|Grim Harvest|description=Passive: When you reduce an enemy to 0 HP, recover 2 HP.|tag=hero,blackguard,core|rarity=common
+BG003|Blood Rend|description=Action (two-handed weapon only): On hit, +1 Damage. If below half HP, also knock target Prone or push 2".|tag=hero,blackguard|rarity=common
+BG004|Unbound Fury|description=Action (once per encounter): For 3 rounds: +1 Fight. Each time you take damage your next melee attack gains +1 Damage (max 3). You cannot reduce yourself below 1 HP from abilities.|tag=hero,blackguard|rarity=uncommon
+BG005|Dark Resilience|description=Passive (once per encounter): When first reduced to 0 HP, instead stand at 1 HP.|tag=hero,blackguard|rarity=uncommon
+BG006|Seeing Red|description=Action: Move up to 4" toward a visible enemy. If you end engaged, gain 2 temporary HP until end of turn.|tag=hero,blackguard|rarity=common
+BG007|Crimson Trail|description=Reaction (once per round): When you take damage, leave a 2" blood zone centered on self until next round. Enemies inside suffer -1 Defense and -1 Will.|tag=hero,blackguard|rarity=uncommon
+
+# ============================================================
+# INQUISITOR ABILITIES
+# ============================================================
+IN001|Twin Verdict|description=Action: Make two attacks — Melee + Melee, or Melee + Hand Crossbow (within 3"). Each consecutive attack this round suffers -1 Fight cumulatively.|tag=hero,inquisitor,core|rarity=common
+IN002|Arcane Distortion|description=Passive: Enemies within 3" suffer -2 to Magic.|tag=hero,inquisitor,core|rarity=common
+IN003|Caging Strike|description=Action: On hit, target cannot disengage until end of next turn.|tag=hero,inquisitor|rarity=common
+IN004|Disrupt|description=Reaction: If an enemy within 2" casts or channels, make an immediate melee attack. On hit, the spell fails.|tag=hero,inquisitor|rarity=common
+IN005|Ankle Biter|description=Action: Make a ranged attack within 3". On hit, target Move -2.|tag=hero,inquisitor|rarity=common
+IN006|Windpipe Break|description=Action: On hit, apply Silence status effect.|tag=hero,inquisitor|rarity=uncommon
+IN007|Crossfire|description=Reaction (once per round): If an adjacent ally attacks a target you are engaged with, you may make a ranged attack at -2 Fight.|tag=hero,inquisitor|rarity=uncommon
+IN008|Steel Focus|description=Passive: While engaged with only one enemy and no other enemies within 3", gain +1 Fight and +1 Defense.|tag=hero,inquisitor|rarity=uncommon
+
+# ============================================================
+# ELEMENTAL SPELLS (modular — used by Mage, Spellblade, etc.)
+# ============================================================
+# FIRE
+SP_F001|Fire Bolt|description=Quick: Single target fire attack. Can apply Burning on hit.|tag=spells,fire|rarity=common
+SP_F002|Fire Ball|description=2" circle fire attack. Charged: 4" circle. Can apply Burning.|tag=spells,fire|rarity=common
+SP_F003|Fire Breath|description=Charged: Cone fire attack. Can apply Burning.|tag=spells,fire|rarity=uncommon
+SP_F004|Fire Orb|description=Place a magical fire trap. Charged: larger radius. Triggers on movement. Can apply Burning.|tag=spells,fire|rarity=uncommon
+SP_F005|Fire Shield|description=Quick protection: reduce fire damage or reflect fire damage until next activation.|tag=spells,fire|rarity=uncommon
+SP_F006|Fire Wall|description=Quick: 3" wall. Charged: 6" wall. Damages units that pass through. Can apply Burning.|tag=spells,fire|rarity=rare
+SP_F007|Fire Beam|description=Quick: 5" direct line. Charged: 12" direct line. Pierces first target. Can apply Burning.|tag=spells,fire|rarity=rare
+
+# ICE
+SP_I001|Ice Bolt|description=Quick: Single target ice attack. Can apply Frozen on hit.|tag=spells,ice|rarity=common
+SP_I002|Ice Ball|description=2" circle ice attack. Charged: 4" circle. Can apply Frozen.|tag=spells,ice|rarity=common
+SP_I003|Ice Breath|description=Charged: Cone ice attack. Larger area. Can apply Frozen.|tag=spells,ice|rarity=uncommon
+SP_I004|Ice Orb|description=Place a magical ice trap. Charged: larger radius. Can apply Frozen.|tag=spells,ice|rarity=uncommon
+SP_I005|Ice Shield|description=Quick protection: reduce ice damage until next activation. Charged: shield ally too.|tag=spells,ice|rarity=uncommon
+SP_I006|Ice Wall|description=Quick: 3" wall. Charged: 6" wall. Difficult terrain. Can apply Frozen.|tag=spells,ice|rarity=rare
+SP_I007|Ice Beam|description=Quick: 5" direct line. Charged: 12" direct line. Can apply Frozen.|tag=spells,ice|rarity=rare
+
+# LIGHTNING
+SP_L001|Lightning Bolt|description=Quick: Single target lightning attack. Ignores 2 Armor. Can apply Livewire.|tag=spells,lightning|rarity=common
+SP_L002|Lightning Ball|description=2" circle lightning. Chains to adjacent units for -2 damage. Can apply Livewire.|tag=spells,lightning|rarity=common
+SP_L003|Lightning Breath|description=Charged: Cone lightning. Chains. Can apply Livewire.|tag=spells,lightning|rarity=uncommon
+SP_L004|Lightning Orb|description=Magical lightning trap. Units passing within 1" are zapped. Can apply Livewire.|tag=spells,lightning|rarity=uncommon
+SP_L005|Lightning Shield|description=Quick: Reduce lightning damage. Units that attack you take 1 lightning damage.|tag=spells,lightning|rarity=uncommon
+SP_L006|Lightning Wall|description=Quick: 3" wall. Charged: 6" wall. Electrified — damages on pass-through. Can apply Livewire.|tag=spells,lightning|rarity=rare
+SP_L007|Lightning Beam|description=Quick: 5" line. Charged: 12" line. Arcs to adjacent units. Ignores armor. Can apply Livewire.|tag=spells,lightning|rarity=rare
+
+# EARTH
+SP_E001|Earth Bolt|description=Quick: Single target earth attack. On hit, knockback 1". Can apply Petrified.|tag=spells,earth|rarity=common
+SP_E002|Earth Ball|description=2" circle earth. Knockback from center. Can apply Petrified.|tag=spells,earth|rarity=common
+SP_E003|Earth Breath|description=Charged: Cone earth. Knockback. Creates difficult terrain. Can apply Petrified.|tag=spells,earth|rarity=uncommon
+SP_E004|Earth Orb|description=Magical earth trap. On trigger, creates difficult terrain and knocks back. Can apply Petrified.|tag=spells,earth|rarity=uncommon
+SP_E005|Earth Resist|description=Quick: Gain +2 Armor until next activation.|tag=spells,earth|rarity=uncommon
+SP_E006|Earth Wall|description=Quick: 3" wall — provides cover and blocks movement. Charged: 6".|tag=spells,earth|rarity=rare
+SP_E007|Earth Beam|description=Quick: 5" line. Charged: 12" line. Knockback all hit units. Creates difficult terrain on path. Can apply Petrified.|tag=spells,earth|rarity=rare
+
+# HOLY
+SP_H001|Holy Bolt|description=Quick: Single target holy attack. Extra damage vs Undead and Shapeshifters.|tag=spells,holy|rarity=common
+SP_H002|Holy Ball|description=2" circle holy. Charged: 4". Extra damage vs Undead.|tag=spells,holy|rarity=common
+SP_H003|Holy Resist|description=Quick: Reduce magic damage by 2 until next activation.|tag=spells,holy|rarity=uncommon
+SP_H004|Holy Shield|description=Charged: Self or ally gains +3 Armor until next activation.|tag=spells,holy|rarity=uncommon
+SP_H005|Holy Wall|description=Blocks undead and dark forces. Quick: 3". Charged: 6".|tag=spells,holy|rarity=rare
+SP_H006|Holy Beam|description=Quick: 5" line. Charged: 12" line. Bonus damage vs Undead. Can remove one dark status from allies caught in beam.|tag=spells,holy|rarity=rare
+
+# DARK
+SP_D001|Dark Bolt|description=Quick: Single target dark attack. Drains 1 HP from target and heals caster.|tag=spells,dark|rarity=common
+SP_D002|Dark Ball|description=2" circle dark. Charged: 4". Heals caster for 1 per target hit.|tag=spells,dark|rarity=common
+SP_D003|Dark Resist|description=Quick: Reduce holy damage by 2 until next activation.|tag=spells,dark|rarity=uncommon
+SP_D004|Dark Shield|description=Charged: Sacrifice 2 HP — self or ally gains +3 Armor and absorbs next 4 damage.|tag=spells,dark|rarity=uncommon
+SP_D005|Dark Wall|description=Applies fear/penalty to units passing through. Quick: 3". Charged: 6".|tag=spells,dark|rarity=rare
+SP_D006|Dark Beam|description=Quick: 5" line. Charged: 12" line. Drains life from all hit. Caster heals proportionally.|tag=spells,dark|rarity=rare
+
+# ============================================================
+# CORE SKILLS (reference/glossary only — tag=skill,core)
+# ============================================================
+CS001|Strength|description=Lift, push, and physical exertion roll checks.|tag=skill,core|rarity=common
+CS002|Athletics|description=Swim, run, climb, and acrobatics roll checks.|tag=skill,core|rarity=common
+CS003|Influence|description=Charisma, persuasion, negotiation, and intimidate roll checks.|tag=skill,core|rarity=common
+CS004|Command|description=Leadership — affects hireling point allotment and helps Morale checks.|tag=skill,core|rarity=common
+CS005|Subterfuge|description=Stealth, stealing, lock picking, and trap roll checks.|tag=skill,core|rarity=common
+CS006|Tracking|description=Following leads, picking up trails, and hiding your own tracks roll checks.|tag=skill,core|rarity=common
+CS007|Perception|description=Awareness and ambush prevention roll checks.|tag=skill,core|rarity=common
+CS008|Craft|description=Blacksmithing, armory, item creation, and herbal components roll checks.|tag=skill,core|rarity=common
+CS009|Arcana|description=Understanding magical application and source knowledge.|tag=skill,core|rarity=common
+CS010|Lore|description=Ancient history and runes roll checks.|tag=skill,core|rarity=common
+CS011|Survival|description=Scouting, hunting/gathering, building shelter, and obtaining food and water in the wilderness.|tag=skill,core|rarity=common
+
+# ============================================================
+# STATUS EFFECTS (reference/glossary — tag=status)
+# ============================================================
+ST001|Poisoned|description=DC 10 Health. Take 1 damage at end of turn. All temp HP removed immediately. Remove with Health roll (DC 10) at end of turn.|tag=status|rarity=common
+ST002|Burning|description=DC 8 Move. Take 2 damage at end of turn. +1 damage from Fire attacks. Remove with Move roll (DC 8) at end of turn.|tag=status|rarity=common
+ST003|Frozen|description=DC 8 Strength. -2 Move. +1 damage from Ice attacks. Remove with Strength roll (DC 8) at end of turn.|tag=status|rarity=common
+ST004|Livewire|description=DC 10 Will. Take 1 damage at end of turn. Units within 1" take 1 Lightning damage. Take 1 damage if you move. +1 damage from Lightning attacks. Remove with Will roll (DC 10).|tag=status|rarity=common
+ST005|Petrified|description=DC 12 Will. Cannot move. Cannot take actions. +1 damage from Earth attacks. Remove with Will roll (DC 12) at end of turn.|tag=status|rarity=common
+ST006|Exposed|description=DC 8 Move. Attacks against you gain +1 Fight, +1 Shoot, +1 Magic, and +1 damage. Remove with Move roll (DC 8) at end of turn.|tag=status|rarity=common
+ST007|Silence|description=DC 10 Will. Cannot cast spells. Remove with Will roll (DC 10) at end of turn.|tag=status|rarity=common
+ST008|Prone|description=Fixed Duration. Attacks against you gain +3 Fight. Spend 1 action to stand and remove Prone.|tag=status|rarity=common
+ST009|Staggered|description=Fixed Duration (1 round). -1 Fight, -2 Shoot, -1 Magic, -1 Move. No removal roll.|tag=status|rarity=common
+ST010|Entangled|description=DC 10 Strength. Cannot move. Remove with Strength roll (DC 10) at end of turn.|tag=status|rarity=common
+ST011|Bewitched|description=DC 12 Will. Cannot target the source of the effect. Must move toward source if able. Remove with Will roll (DC 12). Ends immediately on damage.|tag=status|rarity=common
+ST012|Bewildered|description=DC 10 Will. -2 Fight, Shoot, Magic, and Will. First miss each turn deals 1 damage. Remove by spending 1 action OR Will roll (DC 10) at end of turn.|tag=status|rarity=uncommon
+ST013|Asleep|description=Fixed Duration (up to 3 rounds). Cannot move or act. Ends on damage. Adjacent ally may spend 1 action to wake you.|tag=status|rarity=uncommon
+ST014|Enraged|description=Self-locking. -2 Evasion, +2 damage. Cannot use abilities or spells. Must attack each round or dash toward nearest enemy. Cannot make Will rolls while Enraged. At start of turn, attempt Will (DC 10) to remove — if you do you cannot attack that turn.|tag=status|rarity=uncommon
+ST015|Blinded|description=Action Removal. -3 Fight and Shoot. Spend 1 action to remove.|tag=status|rarity=common
+ST016|Vulnerable|description=DC 10 Move. -2 Armor. Cannot benefit from Guard or defensive stances. Cannot gain cover bonuses. Remove with Move roll (DC 10).|tag=status|rarity=common
+ST017|Suppressed|description=DC 8 Will. Cannot use reactions. Cannot Charge or Channel. -1 Will while Suppressed. Remove with Will roll (DC 8) at end of turn.|tag=status|rarity=common

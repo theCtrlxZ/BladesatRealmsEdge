@@ -8,7 +8,7 @@ S006|Sword|description=Standard weapon of the realm.|tag=shop_core,hand|price=10
 S008|Sling|description=Basic ranged weapon that'll do in a pinch.|tag=shop_core|price=20|dur=2
 S009|Bow|description=The favored missile weapon of rangers, bows may be loaded and fired in a single action. Maximum range is 24". A figure must carry a quiver or use magic ammunition to use a bow.|tag=shop_core|price=50|dur=5
 S010|Quiver|description=Purpose-built to hold ammunition for a bow or crossbow. Must be equipped to make normal shooting attacks. One piece of magic ammunition may be carried without taking up an item slot.|tag=shop_core|price=100
-S011|Tool Kit|description=A figure carrying tool kit gains +2 to all Armory and Traps Skill Rolls.|skill_mod=Armory+2,Traps+2|tag=shop_core|price=50
+S011|Tool Kit|description=A figure carrying tool kit gains +2 to all Craft and Subterfuge Skill Rolls.|skill_mod=Craft+2,Subterfuge+2|tag=shop_core|price=50
 S012|Rope|description=Whenever a figure carrying rope is standing at the top of a vertical structure, it may spend an action to set a rope. Any figure may now use this rope to climb without suffering any movement penalties. A figure may set one rope per game per rope item carried.|tag=shop_core|price=40
 S013|Rations|description=Common traveler's food.|tag=shop_core|price=30
 S014|Torch|description=Lights up 6" around the carrying figure. If dropped or extinguished it is consumed.|tag=shop_core|price=40
@@ -23,7 +23,7 @@ SE005|Crossbow|description=Crossbows take one action to load and one action fire
 SE006|Longbow|description=The favored missile weapon of rangers, bows may be loaded and fired in a single action. Maximum range is 24". A figure must carry a quiver or use magic ammunition to use a bow.|tag=shop_extra|price=100|dur=5
 SE007|Holy Icon|description=Used to inspire divine supplication.|tag=shop_extra|price=80
 SE008|Throwing Knife|description=This includes any kind of small throwing weapons such as knives, axes, and javelins. A figure may make one shooting attack per game for each knife carried. This attack has a range of 8" and does -1 damage. in a pinch, they can be used as a backup melee weapon with a -2 damage modifier in hand-to-hand combat.|stat_mod=Damage-1|tag=shop_extra|price=50|dur=1
-SE009|Repair kit|description=Repairs 2-5 durability of weapon or armor. Used in conjunction with your Armory skill.|tag=shop_extra|price=60
+SE009|Repair kit|description=Repairs 2-5 durability of weapon or armor. Used in conjunction with your Craft skill.|tag=shop_extra|price=60
 
 
 #Herbs
@@ -60,11 +60,11 @@ P011|Holy Water|description=Effective for blessings and dispeling dark magics. C
 A001|Shield|description=A figure is carrying a shield receives +1 to its Armor. It may not however, also carry a two-handed weapon or staff.|stat_mod=Armor+1|tag=armor|rarity=common|cat=armor|slot=offhand|price=40|build=weakness,ward,condition,material
 A002|Light Armor|description=This armor is mostly constructed out of leather or other non-metal materials.|stat_mod=Armor+1|tag=armor|rarity=common|cat=armor|slot=chest|price=20|build=weakness,ward,condition,material
 A003|Heavy Armor|description=This armor is mostly constructed out of metal.|stat_mod=Armor+2,Move-1|tag=armor|rarity=common|cat=armor|slot=chest|price=150|build=weakness,ward,condition,material
-A004|Scout's Cloak|description=A figure wearing this cloak receives +1 to all Stealth Rolls.|skill_mod=Stealth+1|tag=item|rarity=common|cat=trinket|slot=back|price=60
-A005|Greyleaf Cloak|description=A figure wearing this cloak receives +2 to all Stealth Rolls.|skill_mod=Stealth+2|tag=item|rarity=common|cat=trinket|slot=back|price=60
+A004|Scout's Cloak|description=A figure wearing this cloak receives +1 to all Subterfuge Rolls.|skill_mod=Subterfuge+1|tag=item|rarity=common|cat=trinket|slot=back|price=60
+A005|Greyleaf Cloak|description=A figure wearing this cloak receives +2 to all Subterfuge Rolls.|skill_mod=Subterfuge+2|tag=item|rarity=common|cat=trinket|slot=back|price=60
 A006|Gauntlets of Strength|description=A figure may use this item to gain a +5 to any Strength Rolls. The figure must choose whether to use this item before the Skill Roll is made.|skill_mod=Strength+5|tag=item|rarity=common|cat=misc|slot=arms
-A007|Cloak of Invisibility|description=A figure may use this item at any time. For the rest of the turn, no evil creature will force combat with the figure. Furthermore, do not take this figure into account when determining the actions of evil creatures. The figure receives +8 to all Stealth Rolls while invisible.|skill_mod=Stealth+8|tag=item|rarity=common|cat=trinket|slot=back
-A008|Gloves of Climbing|description=A figure may use this item to gain +5 to any Climb Roll. The figure must choose whether to use this item before the Skill Roll is made.|skill_mod=Climb+5|tag=item|rarity=common|cat=misc|slot=arms
+A007|Cloak of Invisibility|description=A figure may use this item at any time. For the rest of the turn, no evil creature will force combat with the figure. Furthermore, do not take this figure into account when determining the actions of evil creatures. The figure receives +8 to all Subterfuge Rolls while invisible.|skill_mod=Subterfuge+8|tag=item|rarity=common|cat=trinket|slot=back
+A008|Gloves of Climbing|description=A figure may use this item to gain +5 to any Climb Roll. The figure must choose whether to use this item before the Skill Roll is made.|skill_mod=Athletics+5|tag=item|rarity=common|cat=misc|slot=arms
 A009|Boots of Soft Tread|description=A figure wearing these boots may activate them during its activation. For the rest of the turn, the figure can ignore any movement penalties for rough ground.|tag=item|rarity=common|cat=trinket|slot=feet
 A010|Helmet|description=A figure wearing a helmet receives +1 to its Armor.|stat_mod=Armor+1|tag=armor|rarity=uncommon|cat=armor|slot=head|price=30|build=weakness,ward,condition,material
 
@@ -124,7 +124,7 @@ W046|Wand|tag=magic|rarity=rare|cat=weapon|slot=mainhand|price=100|dur=1|roll:sp
 #Trinkets
 T001|Gemstone of Spellfire|description=A figure possessing spells may use this gemstone to cast one of those spells without expending that spell for the scenario.|tag=item|rarity=common|cat=trinket|slot=none|price=20
 T002|Sunfire Pendant|description=A figure wearing this pendant may choose to activate it at any time as a free action. For the rest of the game, all attacks made by the figure while in combat with undead creatures count as magic. Furthermore, all undead creatures in combat with the figure suffer Fight-2 and Armor-2|tag=item|rarity=common|cat=trinket|slot=neck|price=20
-T003|Amulet of Leadership|description=If a user wears this amulet, he may add +5 to his recruitment point total when recruiting companions for the coming mission.|tag=item|rarity=common|cat=trinket|slot=neck|price=20
+T003|Amulet of Command|description=If a user wears this amulet, he may add +5 to his recruitment point total when recruiting companions for the coming mission.|tag=item|rarity=common|cat=trinket|slot=neck|price=20
 T004|Eagle-eye Brooch|description=A figure wearing this item gains +2 to all Perception Skill Rolls.|skill_mod=Perception+2|tag=item|rarity=common|cat=misc|slot=none|price=20
 T005|Ring of Teleportation|description=A figure may spend an action to use this ring. Immediately move the figure 10" in any direction, so long as the destination spot is within line of sight.|tag=item|rarity=common|cat=trinket|slot=ring|price=20
 T006|Fishglass|description=A figure that swallows this small marble automatically passes all Swimming Rolls for the remainder of the game.|tag=item|rarity=common|cat=trinket|slot=none|price=20
@@ -139,16 +139,16 @@ T013|Holy Icon|description=Used to inspire divine supplication.|tag=item|rarity=
 
 #Misc
 M001|Quiver|description=Purpose-built to hold ammunition for a bow or crossbow. Must be equipped to make normal shooting attacks. One piece of magic ammunition may be carried without taking up an item slot.|tag=item|rarity=common|cat=tool|slot=none|price=100
-M002|Tool Kit|description=A figure carrying tool kit gains +2 to all Armory and Traps Skill Rolls.|skill_mod=Armory+2,Traps+2|tag=item|rarity=common|cat=tool|slot=none|price=50
+M002|Tool Kit|description=A figure carrying tool kit gains +2 to all Craft and Subterfuge Skill Rolls.|skill_mod=Craft+2,Subterfuge+2|tag=item|rarity=common|cat=tool|slot=none|price=50
 M003|Rope|description=Whenever a figure carrying rope is standing at the top of a vertical structure, it may spend an action to set a rope. Any figure may now use this rope to climb without suffering any movement penalties. A figure may set one rope per game per rope item carried.|tag=item|rarity=common|cat=tool|slot=none|price=40
 M004|Herb Pouch|description=The herb pouch takes up one item slot, but can hold two herbs, essentially allowing the figure to carry two herbs in one item slot.|tag=item|rarity=common|cat=misc|slot=none|price=20
-M005|Book of Lore|description=A figure carrying a book of lore receives +2 to all Ancient Lore and Read Runes Skill Rolls|skill_mod=AncientLore+2,ReadRunes+2|tag=item|rarity=common|cat=misc|slot=none|price=20
-M006|Enchanted Lockpicks|description=A figure may use this item to gain a +5 to any Pick Lock Skill Roll. The figure must choose whether to use this item before the Skill Roll is made.|skill_mod=Pick Lock+5|tag=item|rarity=common|cat=misc|slot=none|price=20
+M005|Book of Lore|description=A figure carrying a book of lore receives +2 to all Lore and Lore Skill Rolls|skill_mod=Lore+2,Lore+2|tag=item|rarity=common|cat=misc|slot=none|price=20
+M006|Enchanted Lockpicks|description=A figure may use this item to gain a +5 to any Subterfuge Skill Roll. The figure must choose whether to use this item before the Skill Roll is made.|skill_mod=Subterfuge+5|tag=item|rarity=common|cat=misc|slot=none|price=20
 M007|Fireball Orb|description=A figure may spend an action to throw this orb anywhere with 10". Every figure within 2" of the point of impact immediately suffers a +5 elemental magic shooting attack.|tag=item|rarity=common|cat=consumable|slot=offhand|uses=1|price=20
-M008|Thief Tools|description=A figure carrying thief tools gains +2 to all Pick Locks and Traps Skill Rolls.|skill_mod=Pick Lock+2,Traps+2|tag=item|rarity=common|cat=tool|slot=none|price=80
+M008|Thief Tools|description=A figure carrying thief tools gains +2 to all Subterfuges and Subterfuge Skill Rolls.|skill_mod=Subterfuge+2,Subterfuge+2|tag=item|rarity=common|cat=tool|slot=none|price=80
 M009|Rations|description=Common traveler's food.|rarity=common|cat=consumable|slot=none|uses=1|price=30
 M010|Torch|description=Lights up 6" around the carrying figure. If dropped or extinguished it is consumed.|rarity=common|cat=consumable|slot=offhand|uses=1|price=40
-M011|Repair kit|description=Repairs 2-5 durability of weapon or armor. Used in conjunction with your Armory skill.|rarity=common|cat=consumable|slot=none|uses=1|price=60
+M011|Repair kit|description=Repairs 2-5 durability of weapon or armor. Used in conjunction with your Craft skill.|rarity=common|cat=consumable|slot=none|uses=1|price=60
 M012|Bandages|description=Provides basic healing in dire circumstances.|rarity=common|cat=consumable|slot=none|uses=1|price=20
 #map
 
@@ -156,19 +156,7 @@ M012|Bandages|description=Provides basic healing in dire circumstances.|rarity=c
 
 
 
-#Weapon Materials (new progression)
-WM001|Bronze Weapon|description=Baseline martial weapon material.|stat_mod=Damage+6|tag=material,weapon|rarity=common|cat=material|price=40
-WM002|Wooden Weapon|description=Light weapon focus material.|stat_mod=Damage+4|skill_mod=Arcana+1|tag=material,weapon|rarity=common|cat=material|price=35
-WM003|Iron Weapon|description=Durable but rustable weapon material.|stat_mod=Damage+7|roll:spells:tag=skill:count=1|tag=material,weapon,rustable|rarity=uncommon|cat=material|price=60
-WM004|Steel Weapon|description=Reliable advanced weapon material.|stat_mod=Damage+8|tag=material,weapon|rarity=rare|cat=material|price=90
-WM005|Mithril Weapon|description=Masterwork material: high damage and mobility-friendly.|stat_mod=Damage+10,Move+1,Fight+1|skill_mod=Perception+1|tag=material,weapon|rarity=legendary|cat=material|price=180
 
-#Armor Materials (new progression)
-AM001|Bronze Armor Material|description=Standard plating with practical craft value.|skill_mod=Craft+1|tag=material,armor|rarity=common|cat=material|price=40
-AM002|Leather Armor Material|description=Flexible armor material favored by subtle operators.|skill_mod=Subterfuge+1,Influence+1,Command-1|tag=material,armor|rarity=uncommon|cat=material|price=55
-AM003|Steel Armor Material|description=Hardened shell with command presence.|stat_mod=Health+5|skill_mod=Subterfuge-2,Command+2|tag=material,armor|rarity=rare|cat=material|price=90
-AM004|Shadoweave Armor Material|description=Darkwoven cloth that prioritizes movement and stealth.|stat_mod=Move+1|skill_mod=Subterfuge+3,Influence-1|tag=material,armor|rarity=rare|cat=material|price=120
-AM005|Mithril Armor Material|description=Elite armor blend with agility and evasive support.|stat_mod=Move+1,Evasion+1|skill_mod=Subterfuge+2|tag=material,armor|rarity=legendary|cat=material|price=180
 
 #Hybrid Ammo
 RA001|Barbed Arrow|description=Ammo mod: +1 damage versus Light Armor targets.|tag=ammo,ranged|rarity=common|cat=consumable|slot=none|uses=1|price=15

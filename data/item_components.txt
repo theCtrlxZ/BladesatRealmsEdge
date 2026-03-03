@@ -1,136 +1,155 @@
-# item_components.txt
-# Format: id|Name|group=<slot>|tag=<comma tags>|rarity=<tier>|weight=<num>|prefix=...|suffix=...|postfix=...|description=...
-#
-#
-# --- MATERIALS (prefix) ---
-#MERCHANT LEVEL 1
-100|Bronze|description=Ancient heavy alloy; sturdy, loud, and easily maintained.|tag=hand,twohand,ranged,armor|rarity=common|group=material|mech_tier=0|prefix=Bronze|token=bronze|weight=9|stat_mod=Armor+1, Stealth-2|dur_add=+1|price_add=15
-101|Cloth|description=Light and quiet, but tears easily.|tag=armor|rarity=common|group=material|mech_tier=0|prefix=Cloth|token=cloth|weight=9|stat_mod=Stealth+3, Armor-2|dur_add=-2|price_add=-10
-102|Wooden|description=Runed wood and seasoned timber take enchantments readily but burn and splinter.|tag=hand,twohand,ranged,armor|rarity=common|group=material|mech_tier=0|prefix=Wooden|token=wooden|weight=6|skill=Flammable|stat_mod=Magic+1, Armor-1|dur_add=-1|price_add=0
-103|Hide|description=Rugged hide and layered pelts; dependable in the wild.|tag=armor|rarity=common|group=material|mech_tier=0|prefix=Hide|token=hide|weight=10|stat_mod=|dur_add=0|price_add=0
-#MERCHANT LEVEL 2
-104|Iron|description=Heavy, reliable metal. Armor made of Iron is loud and cumbersome.|tag=hand,twohand,ranged,armor|rarity=common|group=material|mech_tier=2|prefix=Iron|token=iron|weight=10|skill=Rustable|stat_mod=Armor+1, Stealth-3|dur_add=+1|price_add=25
-105|Leather|description=Flexible and quiet, but offers limited protection.|tag=armor|rarity=common|group=material|mech_tier=2|prefix=Leather|token=leather|weight=8|stat_mod=Stealth+2, Armor-1|dur_add=-1|price_add=10
-106|Bone|description=Light, unsettling, and easy to shape; prone to cracking under strain.|tag=hand,twohand,ranged,armor|rarity=common|group=material|mech_tier=2|prefix=Bone|token=bone|weight=7|stat_mod=Magic+1, Armor-1|dur_add=-1|price_add=20
-107|Obsidian|description=Extremely sharp volcanic glass. Weapons gain +2 Damage, but lose 4 durability when repaired and fracture easily.|tag=hand,twohand,ranged|rarity=uncommon|group=material|mech_tier=2|prefix=Obsidian|token=obsidian|weight=4|stat_mod=Damage+2|dur_add=-5|price_add=120
-#MERCHANT LEVEL 3
-108|Steel|description=Well-forged steel holds an edge and turns blows, but clanks and shines.|tag=hand,twohand,ranged,armor|rarity=common|group=material|mech_tier=3|prefix=Steel|token=steel|weight=8|price_add=50|skill=Rustable|stat_mod=Armor+2, Stealth-4|dur_add=+2
-109|Carapace|description=Segmented plates flex with motion; quiet, tough, and hard to mend.|tag=armor|rarity=uncommon|group=material|mech_tier=3|prefix=Carapace|token=carapace|weight=5|stat_mod=Stealth+3, Armor-1|dur_add=+1|price_add=250
-110|Rune|description=Runic work channels magic. Items made with this material gain +1 Magic, but are brittle under force.|tag=hand,twohand,ranged,armor|rarity=rare|group=material|mech_tier=3|prefix=Runic|token=rune|weight=3|stat_mod=Magic+2, Armor-1|dur_add=-1|price_add=400
-111|Silver|description=Weapons made with this material gain +1 damage against undead and werewolves.|tag=hand,twohand,ranged,armor|rarity=uncommon|group=material|mech_tier=3|prefix=Silver|token=silver|weight=6|price_add=200|stat_mod=Move+1, Damage-1
-112|Voidglass|description=Anti-magic glass. Weapons gain +1 Damage against spellcasters and enchanted creatures, but are fragile.|tag=hand,twohand,ranged|rarity=uncommon|group=material|mech_tier=3|prefix=Voidglass|token=voidglass|weight=3|stat_mod=Magic+2, Damage+1|dur_add=-4|price_add=350
-#MERCHANT LEVEL 4
-113|Gold|description=Auric plate and sanctified fittings conduct enchantment. Heavy, radiant, and conspicuous.|tag=hand,twohand,ranged,armor|rarity=rare|group=material|mech_tier=4|prefix=Auric|token=gold|weight=3|stat_mod=Armor+2, Magic+1, Stealth-6|dur_add=+2|price_add=750
-114|Shadowweave|description=Light-bending fabric and layered void-thread. Silent, but cannot take heavy punishment.|tag=armor|rarity=rare|group=material|mech_tier=4|prefix=Shadowweave|token=shadowweave|weight=3|stat_mod=Stealth+5, Armor-2|dur_add=-2|price_add=650
-115|Crystal|description=Prismatic cores and crystal lattices amplify magic, but chip and fracture under impact.|tag=hand,twohand,ranged,armor|rarity=rare|group=material|mech_tier=4|prefix=Crystal|token=crystal|weight=3|stat_mod=Magic+3, Armor-1, Stealth-1|dur_add=-2|price_add=800
-116|Damascus|description=Master-forged layered metal; reliable edge and resilience without excess weight.|tag=hand,twohand,ranged,armor|rarity=rare|group=material|mech_tier=4|prefix=Damascus|token=damascus|weight=4|stat_mod=Armor+1|dur_add=+3|price_add=450
-117|Meteorite|description=Alien metal with violent density. Weapons gain +3 Damage against armored targets, but are difficult to reforge.|tag=hand,twohand,ranged|rarity=rare|group=material|mech_tier=4|prefix=Meteorite|token=meteorite|weight=2|stat_mod=Damage+3, Move-1|dur_add=-1|price_add=900
-#MERCHANT LEVEL 5
-118|Adamant|description=Brutal, dense, near-indestructible. Wearing it is like carrying a fortress.|tag=hand,twohand,ranged,armor|rarity=rare|group=material|mech_tier=5|prefix=Adamant|token=adamant|weight=3|price_add=800|stat_mod=Armor+3, Stealth-7, Move-1|dur_add=+6
-119|Mithril|description=Light as a whisper and strong for its weight; ideal for swift fighters.|tag=hand,twohand,ranged,armor|rarity=rare|group=material|mech_tier=5|prefix=Mithril|token=mithril|weight=5|price_add=500|stat_mod=Move+1, Stealth+2, Armor-1|dur_add=+4
-120|Starforged|description=Metal tempered under strange skies. Items made with this material gain +2 Magic and resist dispelling.|tag=hand,twohand,ranged,armor|rarity=legendary|group=material|mech_tier=5|prefix=Starforged|token=starforged|weight=2|stat_mod=Magic+4, Armor-1|dur_add=+2|price_add=2200
-121|Dragonscale|description=Scaled relic-hide that shrugs off heat and terror. Hard to work, harder to break.|tag=hand,twohand,ranged,armor|rarity=legendary|group=material|mech_tier=5|prefix=Dragonscale|token=dragonscale|weight=2|price_add=1500|stat_mod=Armor+1, Magic+1, Stealth-1|dur_add=+8
-122|Orichalcum|description=Ancient alloy of lost empires. Weapons gain +2 Magic and enchantments last longer, but the metal resists reshaping.|tag=hand,twohand,ranged|rarity=legendary|group=material|mech_tier=5|prefix=Orichalcum|token=orichalcum|weight=1|stat_mod=Magic+3, Move+1|dur_add=+1|price_add=2600
+# ============================================================
+# ITEM COMPONENTS — Bloodoath Tactics
+# Weapon materials: base damage includes weapon type modifier added on top
+# Armor materials: modifiers applied to base armor tier
+# Format: id|Name|fields...|tag=...|merchant_level=N
+# ============================================================
 
+# ============================================================
+# CONDITIONS
+# ============================================================
+CN001|Masterwork|description=Expertly crafted. +1 durability.|stat_mod=Armor+1|tag=condition|rarity=uncommon
+CN002|Rusty|description=Poorly maintained. -1 durability.|tag=condition|rarity=common
+CN003|Balanced|description=Well-balanced weapon. +1 Fight.|stat_mod=Fight+1|tag=condition|rarity=uncommon
+CN004|Jagged|description=Serrated edge tears flesh. +1 damage, -1 durability.|tag=condition|rarity=uncommon
+CN005|Lightweight|description=Easier to wield. +1 Move.|stat_mod=Move+1|tag=condition|rarity=common
 
-# --- CONDITIONS (prefix) ---
-199|Standard|tag=hand,twohand,ranged,armor|rarity=common|group=condition|mech_tier=0|silent=1|weight=15
-200|Broken|tag=hand,twohand,ranged,armor|rarity=common|dur_mul=0.25|group=condition|mech_tier=0|prefix=Broken|weight=1|price_mul=0.7
-201|Crude|tag=hand,twohand,ranged,armor|rarity=common|dur_mul=0.8|group=condition|mech_tier=0|prefix=Crude|weight=3|price_mul=0.9
-202|Reinforced|tag=hand,twohand,ranged,armor|rarity=uncommon|dur_mul=1.1|group=condition|mech_tier=2|prefix=Fine|weight=4|price_mul=1.15
-203|Exquisite|tag=hand,twohand,ranged,armor|rarity=rare|dur_mul=1.5|group=condition|mech_tier=4|prefix=Exquisite|weight=4|price_mul=1.5
-204|Masterwork|tag=hand,twohand,ranged,armor|rarity=legendary|dur_mul=1.7|group=condition|mech_tier=5|prefix=Masterwork|weight=2|price_mul=1.7
-205|Fine|tag=hand,twohand,ranged,armor|rarity=uncommon|dur_mul=1.15|group=condition|mech_tier=3|prefix=Fine|weight=2|price_mul=1.3
-206|Poor|tag=hand,twohand,ranged,armor|rarity=common|dur_mul=0.6|group=condition|mech_tier=0|prefix=Poor|weight=3|price_mul=0.8
+# ============================================================
+# ELEMENTS
+# ============================================================
+EL001|Flaming|description=Imbued with fire. Attacks deal fire damage and may apply Burning.|tag=element,fire|rarity=uncommon
+EL002|Frost|description=Imbued with ice. Attacks deal ice damage and may apply Frozen.|tag=element,ice|rarity=uncommon
+EL003|Shocking|description=Imbued with lightning. Attacks deal lightning damage, ignores 1 armor, may apply Livewire.|tag=element,lightning|rarity=uncommon
+EL004|Earthen|description=Imbued with earth energy. Attacks deal earth damage and may knockback.|tag=element,earth|rarity=uncommon
+EL005|Holy|description=Imbued with holy light. Extra damage vs Undead and Shapeshifters.|tag=element,holy|rarity=rare
+EL006|Shadow|description=Imbued with dark energy. Attacks drain 1 HP and heal caster.|tag=element,dark|rarity=rare
 
-# --- ELEMENTS (suffix) ---
-300|Fire|tag=hand,twohand,ranged,armor|rarity=rare|group=element|mech_tier=3|suffix=of Fire|token=fire|weight=3|damagetype=fire|price_add=200
-301|Ice|tag=hand,twohand,ranged,armor|rarity=rare|group=element|mech_tier=3|suffix=of Ice|token=ice|weight=3|damagetype=ice|price_add=200
-302|Earth|tag=hand,twohand,ranged,armor|rarity=rare|group=element|mech_tier=3|suffix=of Earth|token=earth|weight=2|damagetype=earth|price_add=200
-303|Lightning|tag=hand,twohand,ranged,armor|rarity=rare|group=element|mech_tier=3|suffix=of Lightning|token=lightning|weight=2|damagetype=lightning|price_add=200
-304|Shadow|tag=hand,twohand,ranged,armor|rarity=rare|group=element|mech_tier=4|suffix=of Shadow|token=shadow|weight=2|damagetype=shadow|price_add=300
-305|Holy|tag=hand,twohand,ranged,armor|rarity=rare|group=element|mech_tier=4|suffix=of Holy|token=holy|weight=2|damagetype=holy|price_add=300
-306|Regular|tag=hand,twohand,ranged,armor|rarity=common|group=element|mech_tier=0|weight=15|damagetype=physical|silent=1
+# ============================================================
+# ENCHANTMENTS
+# ============================================================
+EN001|Keen|description=Edge never dulls. +1 Fight.|stat_mod=Fight+1|tag=enchantment|rarity=uncommon
+EN002|Defending|description=Magically guards the wielder. +1 Evasion.|stat_mod=Evasion+1|tag=enchantment|rarity=rare
+EN003|Vicious|description=Strikes with unnatural force. +2 damage.|tag=enchantment|rarity=rare
+EN004|Spell-Storing|description=Holds one spell charge.|tag=enchantment|rarity=rare
+EN005|Returning|description=Thrown weapons return after use.|tag=enchantment|rarity=uncommon
 
-# --- ENCHANTMENTS (suffix) --- *not currently used
-400|None|tag=hand,twohand,ranged,armor|rarity=common|group=enchant|mech_tier=0|silent=1|weight=12
-401|the Bastion|description=The wearer feels planted, as if the ground itself wants them to hold.|tag=armor|rarity=rare|group=enchant|mech_tier=4|suffix=of the Bastion|weight=2
-402|the Reaper|description=It drinks in torchlight and leaves the air colder behind each swing.|tag=hand,twohand|rarity=rare|group=enchant|mech_tier=4|suffix=of the Reaper|weight=2
-403|the Dawn|description=In darkness, faint sun-motes orbit the blade or helm.|tag=hand,twohand,ranged,armor|rarity=legendary|group=enchant|mech_tier=5|suffix=of the Dawn|token=holy|weight=1
-404|the Hunter|description=Always feels warm to the touch when stalking prey.|tag=hand,twohand,ranged,armor|rarity=uncommon|group=enchant|mech_tier=3|suffix=of the Hunter|weight=3
+# ============================================================
+# QUIRKS
+# ============================================================
+QK001|Cursed|description=Cannot be unequipped willingly. -1 Will.|stat_mod=Will-1|tag=quirk|rarity=uncommon
+QK002|Bloodthirsty|description=Must attack each turn if adjacent to enemy or suffer Staggered.|tag=quirk|rarity=uncommon
+QK003|Loyal|description=Only functions for its current owner. Others cannot use it.|tag=quirk|rarity=rare
+QK004|Whispering|description=Grants vague warnings. +1 Perception.|skill_mod=Perception+1|tag=quirk|rarity=uncommon
 
-# --- QUIRKS (prefix) --- *not currently used
-500|Regular|description=Unremarkable craftsmanship with no unusual traits or markings.|tag=hand,twohand,ranged,armor|rarity=common|group=quirk|mech_tier=0|weight=36|silent=1
-501|Thirsty|description=It seems to crave battle, growing eager in the moments before violence.|tag=hand,twohand|rarity=rare|group=quirk|mech_tier=3|weight=1
-502|Oathbound|description=Bound by an old vow, it rejects cowardice and feels heavier in a retreating hand.|tag=armor|rarity=rare|group=quirk|mech_tier=3|weight=1
-503|Star-marked|description=It bears a slow-moving constellation across its surface that shifts when no one is watching.|tag=hand,twohand,ranged,armor|rarity=legendary|group=quirk|mech_tier=4|weight=1
-504|Humming|description=It hums softly with a steady, resonant tone like a distant tuning fork.|tag=hand,twohand,ranged|rarity=uncommon|group=quirk|mech_tier=3|weight=1
-505|Thorned|description=Barbed protrusions and hidden spines punish anyone reckless enough to strike you up close.|tag=armor|rarity=uncommon|group=quirk|mech_tier=2|weight=1
-506|Spiked|description=Wicked spikes turn grapples into bloodshed and make every melee hit a costly mistake.|tag=armor|rarity=rare|group=quirk|mech_tier=3|weight=1
-507|Insulated|description=Thick lining and wind-baffling layers keep you warm and steady in bitter cold and rough gusts.|tag=armor|rarity=common|group=quirk|mech_tier=0|weight=3
-508|Breathable|description=Vented panels and wicking layers shed heat fast, keeping you mobile in sweltering weather.|tag=armor|rarity=common|group=quirk|mech_tier=0|weight=3
-509|Sealed|description=Rubber seams and treated joints shrug off rain and mud, keeping the worst of the storm outside.|tag=armor|rarity=uncommon|group=quirk|mech_tier=2|weight=1
-510|Partial|description=Built for speed over coverage, it leaves gaps that a precise enemy can exploit.|tag=armor|rarity=common|group=quirk|mech_tier=2|weight=1
-511|Full|description=Every gap is sealed and every plate overlaps, trading subtlety for relentless protection.|tag=armor|rarity=rare|group=quirk|mech_tier=3|weight=1
-512|Polished|description=Its mirror-bright finish is regal and intimidating, but impossible to hide in firelight.|tag=armor|rarity=uncommon|group=quirk|mech_tier=2|weight=1
-513|Darkened|description=Muted fittings and a darkened finish swallow light and sound, though the treatment is easy to scuff.|tag=armor|rarity=uncommon|group=quirk|mech_tier=2|weight=1
-514|Heralded|description=Marked with proud heraldry and rank, it commands recognition while ruining any hope of stealth.|tag=armor|rarity=rare|group=quirk|mech_tier=3|weight=1
-515|Dread|description=Adorned with grim trophies and a cruel silhouette, it unsettles the weak and draws the bold like moths.|tag=armor|rarity=rare|group=quirk|mech_tier=3|weight=1
-516|Mirrored|description=Inlaid with reflective wards, it can turn a portion of hostile magic—and even healing—back on its source when the wearer steadies their will.|tag=armor|rarity=legendary|group=quirk|mech_tier=4|weight=1
-517|Balanced|description=Well-balanced and forgiving; feels steady in the hand and easier to control under stress.|tag=hand,twohand,ranged|rarity=common|group=quirk|mech_tier=0|weight=2|prefix=Balanced
-518|Quickdraw|description=Built for speed; readies fast and strikes cleanly, but lacks power on heavy targets.|tag=hand,twohand,ranged|rarity=uncommon|group=quirk|mech_tier=2|weight=1|prefix=Quickdraw
-519|Suregrip|description=Wrapped and secure; harder to disarm, though the extra bulk slows finesse work.|tag=hand,twohand|rarity=uncommon|group=quirk|mech_tier=2|weight=1|prefix=Suregrip
-520|Serrated|description=Serrated edge causes lingering wounds; on a hit, inflicts Bleed 1 (or +1 Bleed if already bleeding), but dulls faster.|tag=hand,twohand|rarity=rare|group=quirk|mech_tier=3|weight=1|prefix=Serrated
-521|Needlepoint|description=Narrow, thrust-friendly point; better at piercing armor, but chips easily if used for heavy chopping.|tag=hand,twohand|rarity=rare|group=quirk|mech_tier=3|weight=1|prefix=Needlepoint
-522|Bloodgrooved|description=Grooved to spill blood; increases Bleed effects, but makes the weapon harder to clean and maintain.|tag=hand,twohand|rarity=rare|group=quirk|mech_tier=3|weight=1|prefix=Bloodgrooved
-523|Vorpal|description=Unnaturally hungry edge; on a critical hit, apply an additional grievous effect, but it resists being sheathed quietly.|tag=hand,twohand|rarity=legendary|group=quirk|mech_tier=5|weight=1|prefix=Vorpal
-524|Fletched|description=Carefully fletched and tuned; shots fly truer, but the delicate work is easily ruined in rain and mud.|tag=ranged|rarity=uncommon|group=quirk|mech_tier=2|weight=1|prefix=Fletched
-525|Longstring|description=Draws farther and hits harder; slow to ready and punishing to maintain.|tag=ranged|rarity=rare|group=quirk|mech_tier=3|weight=1|prefix=Longstring
+# ============================================================
+# POTENCY
+# ============================================================
+PT001|Minor|description=Weaker version of its effect.|tag=potency|rarity=common
+PT002|Standard|description=Normal potency.|tag=potency|rarity=common
+PT003|Greater|description=Enhanced potency. Effect doubled.|tag=potency|rarity=uncommon
+PT004|Superior|description=Masterwork potency. Triple effect or duration.|tag=potency|rarity=rare
 
+# ============================================================
+# INFUSIONS
+# ============================================================
+IF001|Venom|description=Weapon coated in poison. On hit, apply Poisoned.|tag=infusion|rarity=uncommon
+IF002|Paralytic|description=Coated in paralytic agent. On hit, target roll Strength vs 12 or cannot act next turn.|tag=infusion|rarity=rare
+IF003|Arcane Oil|description=Weapon deals magical damage type.|tag=infusion|rarity=uncommon
+IF004|Bloodletter|description=Critical hits apply Bleeding (take 1 damage per turn until a Strength roll DC 10).|tag=infusion|rarity=rare
 
-# --- POTION POTENCY (prefix) ---
-600|Minor|tag=potion|rarity=common|group=potency|mech_tier=0|prefix=Minor|uses_mul=0.75|weight=5
-601|Standard|tag=potion|rarity=common|group=potency|mech_tier=2|silent=1|weight=4|price_add=50
-602|Greater|tag=potion|rarity=rare|group=potency|mech_tier=3|prefix=Greater|uses_mul=1.25|weight=3|price_add=100
-603|Superior|tag=potion|rarity=legendary|group=potency|mech_tier=4|prefix=Superior|uses_mul=1.5|weight=2|price_add=250
+# ============================================================
+# WEAKNESSES
+# ============================================================
+WK001|Silver Weakness|description=Item deals +2 damage against Undead and Shapeshifters.|tag=weakness|rarity=uncommon
+WK002|Sunlight Vulnerability|description=Item loses 1 durability per scenario played outdoors at daytime.|tag=weakness|rarity=common
+WK003|Brittle|description=-2 durability.|tag=weakness|rarity=common
 
-# --- INFUSION (prefix) ---
-700|Magic|tag=hand,twohand,ranged,armor,trinket|rarity=uncommon|group=infusion|mech_tier=3|skill=roll:spells:tag=weapon_spell:count=1|prefix=Magic|weight=3|damagetype=magic|charges_add=1d3|price_add=300
-701|Non-Magic|tag=hand,twohand,ranged,armor,trinket|rarity=common|group=infusion|mech_tier=0|silent=1|weight=14
+# ============================================================
+# BANES
+# ============================================================
+BN001|Undead Bane|description=+2 damage against Undead.|tag=bane|rarity=uncommon
+BN002|Demon Bane|description=+2 damage against Demons.|tag=bane|rarity=uncommon
+BN003|Beast Bane|description=+2 damage against Beasts.|tag=bane|rarity=common
 
-# --- WEAKNESS (suffix) ---
-054|Fire Vulnerability|description=Fire attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Fire
-055|Ice Vulnerability|description=Ice attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Ice
-056|Lightning Vulnerability|description=Lightning attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Lightning
-057|Earth Vulnerability|description=Earth attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Earth
-058|Shadow Vulnerability|description=Shadow attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Shadow
-059|Holy Vulnerability|description=Holy attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Holy
-060|Physical Vulnerability|description=Physical attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Physical
-061|Magic Vulnerability|description=Magic attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Magic
-062|Ranged Vulnerability|description=Ranged attacks made against this unit gain +2 Fight.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=2|suffix=, Weak to Ranged
-063|Healing Resistance|description=Healing items and spells used on this character only heal half as much.|tag=skill,weakness,armor|rarity=uncommon|group=weakness|mech_tier=1|weight=1|suffix=, Resists Healing
-064|No Vulnerability|tag=skill,weakness,armor|rarity=common|silent=1|group=weakness|mech_tier=1|weight=15
+# ============================================================
+# WARDS
+# ============================================================
+WR001|Fire Ward|description=-2 damage from fire attacks.|tag=ward,fire|rarity=uncommon
+WR002|Ice Ward|description=-2 damage from ice attacks.|tag=ward,ice|rarity=uncommon
+WR003|Lightning Ward|description=-2 damage from lightning attacks.|tag=ward,lightning|rarity=uncommon
+WR004|Earth Ward|description=-2 damage from earth attacks.|tag=ward,earth|rarity=uncommon
+WR005|Holy Ward|description=-2 damage from holy attacks.|tag=ward,holy|rarity=rare
+WR006|Dark Ward|description=-2 damage from dark attacks.|tag=ward,dark|rarity=rare
 
-# --- BANE (prefix) ---
-164|Necrobane|description=Attacks made against the undead gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=rare|group=bane|mech_tier=4|weight=2|price_add=700|prefix=Bane
-165|Dracobane|description=Attacks made against reptiles gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=rare|group=bane|mech_tier=4|weight=2|price_add=700|prefix=Bane
-166|Goblinbane|description=Attacks made against goblins gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=uncommon|group=bane|mech_tier=4|weight=3|price_add=300|prefix=Bane
-167|Bestiabane|description=Attacks made against beasts gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=rare|group=bane|mech_tier=4|weight=3|price_add=700|prefix=Bane
-168|Monsterbane|description=Attacks made against monsters gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=uncommon|group=bane|mech_tier=4|weight=4|price_add=300|prefix=Bane
-169|Hominesbane|description=Attacks made against humans gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=legendary|group=bane|mech_tier=5|weight=1|price_add=1000|prefix=Bane
-170|Feybane|description=Attacks made against the fey, such as elves and fairies (but not treefolk) gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=uncommon|group=bane|mech_tier=4|weight=2|price_add=500|prefix=Bane
-171|Demonbane|description=Attacks made against demons gain +2 Fight.|tag=bane,hand,twohand,ranged|rarity=uncommon|group=bane|mech_tier=4|weight=3|price_add=500|prefix=Bane
-172|Normal|tag=bane,hand,twohand,ranged|rarity=common|silent=1|group=bane|mech_tier=0|weight=35
+# ============================================================
+# WEAPON MATERIALS
+# merchant_level determines availability in shops
+# stat_mod=Damage+N is the flat weapon damage for that material
+# Base weapons have a type modifier (e.g. Sword +0, Two-Handed +2)
+# The material damage replaces the base weapon damage value
+# e.g. Bronze Sword = Damage 6 (material 6, sword mod 0)
+#       Bronze Greatsword = Damage 8 (material 6 + two-handed +2)
+# ============================================================
 
-# --- WARDS --- (suffix)
-274|Flame Ward|description=Fire attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=3|weight=3|price_add=300|suffix=with Flame Ward
-275|Frost Ward|description=Ice attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=3|weight=3|price_add=300|suffix=with Frost Ward
-276|Thunder Ward|description=Lightning attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=3|weight=3|price_add=300|suffix=with Thunder Ward
-277|Rock Ward|description=Earth attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=3|weight=3|price_add=300|suffix=with Rock Ward
-278|Dark Ward|description=Shadow attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=3|weight=3|price_add=300|suffix=with Dark Ward
-279|Light Ward|description=Holy attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=3|weight=3|price_add=300|suffix=with Light Ward
-280|Blade Ward|description=Physical attacks made against this unit gain -2 Fight.|tag=armor|rarity=legendary|group=ward|mech_tier=5|weight=1|price_add=700|suffix=with Blade Ward
-281|Magic Ward|description=Magic attacks made against this unit gain -2 Fight.|tag=armor|rarity=legendary|group=ward|mech_tier=5|weight=1|price_add=700|suffix=with Magic Ward
-282|Ranged Ward|description=Ranged attacks made against this unit gain -2 Fight.|tag=armor|rarity=uncommon|group=ward|mech_tier=4|weight=2|price_add=500|suffix=with Arrow Ward
-283|Healing Ward|description=Healing items and spells heal half as much HP to this unit.|tag=armor|rarity=rare|group=ward|mech_tier=3|weight=1|price_add=300|suffix=with Healing Ward
-284|No Ward|tag=ward,armor|rarity=common|silent=1|group=ward|mech_tier=0|weight=20
+# Merchant Level 1
+MW001|Bronze|description=Baseline martial weapon. No special modifiers.|stat_mod=Damage+6|tag=material,weapon|merchant_level=1|rarity=common|price=40
+MW002|Wooden|description=Light, magically receptive. Favored by those who channel.|stat_mod=Damage+4|skill_mod=Arcana+1|tag=material,weapon|merchant_level=1|rarity=common|price=35
+
+# Merchant Level 2
+MW003|Iron|description=Durable but susceptible to rust. Reliable everyday material.|stat_mod=Damage+7|tag=material,weapon,rustable|merchant_level=2|rarity=common|price=60
+MW004|Bone|description=Primitive but effective. Survivors' material.|stat_mod=Damage+7|skill_mod=Survival+1|tag=material,weapon|merchant_level=2|rarity=common|price=55
+MW005|Obsidian|description=Extremely sharp, but brittle. Low durability.|stat_mod=Damage+8|tag=material,weapon,low_durability|merchant_level=2|rarity=uncommon|price=70
+
+# Merchant Level 3
+MW006|Steel|description=Standard quality arms. Reliable with no drawbacks.|stat_mod=Damage+8|tag=material,weapon|merchant_level=3|rarity=uncommon|price=90
+MW007|Silver|description=Potent against supernatural foes.|stat_mod=Damage+8|tag=material,weapon|merchant_level=3|rarity=uncommon|price=100|note=+1 damage vs Undead/Shapeshifters
+MW008|Rune|description=Carved with ancient markings. Magically potent but physically weaker.|stat_mod=Damage+6,Magic+1|skill_mod=Lore+1,Strength-1|tag=material,weapon|merchant_level=3|rarity=uncommon|price=110
+MW009|Voidglass|description=Forged from dark crystalline material. Arcane focus weapon.|stat_mod=Damage+7,Magic+1|skill_mod=Arcana+1,Will-1|tag=material,weapon|merchant_level=3|rarity=uncommon|price=115
+
+# Merchant Level 4
+MW010|Gold|description=Rare prestige material. Heavy but effective.|stat_mod=Damage+9|tag=material,weapon|merchant_level=4|rarity=rare|price=140
+MW011|Crystal|description=Magically amplified but structurally fragile.|stat_mod=Damage+7,Magic+2|skill_mod=Strength-1|tag=material,weapon,low_durability|merchant_level=4|rarity=rare|price=140
+MW012|Damascus|description=Master-forged layered steel. Fight bonus.|stat_mod=Damage+9,Fight+1|tag=material,weapon|merchant_level=4|rarity=rare|price=150
+MW013|Meteorite|description=Fallen star metal. Ignores armor but unsteady.|stat_mod=Damage+9,Evasion-1|tag=material,weapon|merchant_level=4|rarity=rare|price=155|note=Ignore 1 Armor
+
+# Merchant Level 5
+MW014|Mithril|description=Masterwork material. Highest standard of craft.|stat_mod=Damage+10,Move+1,Fight+1|skill_mod=Perception+1|tag=material,weapon|merchant_level=5|rarity=legendary|price=180
+MW015|Starforged|description=Forged from stellar alloys. Ignores 1 armor.|stat_mod=Damage+11,Fight+1|tag=material,weapon|merchant_level=5|rarity=legendary|price=200|note=Ignore 1 Armor
+MW016|Orichalum|description=Legendary metal. Maximum damage but burdens the wielder.|stat_mod=Damage+12,Evasion-1|skill_mod=Strength+1,Move-1|tag=material,weapon|merchant_level=5|rarity=legendary|price=210
+MW017|Diamond|description=Hardened beyond measure. Bolsters will and armor.|stat_mod=Damage+10,Armor+1,Will+2|skill_mod=Subterfuge-1|tag=material,weapon|merchant_level=5|rarity=legendary|price=195
+MW018|Auric|description=Gold-alloy magic-conductor. Pure magical amplification.|stat_mod=Damage+10,Magic+2|skill_mod=Lore+1,Arcana+1,Strength-1|tag=material,weapon|merchant_level=5|rarity=legendary|price=190
+
+# ============================================================
+# ARMOR MATERIALS
+# ============================================================
+
+# Merchant Level 1
+MA001|Bronze|description=Standard plating. Practical craft value.|skill_mod=Craft+1|tag=material,armor|merchant_level=1|rarity=common|price=40
+MA002|Wooden|description=Improvised wood protection. Slight armor penalty.|stat_mod=Armor-1|skill_mod=Survival+1,Craft+1|tag=material,armor|merchant_level=1|rarity=common|price=30|note=Armor cannot go below 0
+MA003|Cloth|description=Light and flexible. Social grace preserved.|skill_mod=Influence+1|tag=material,armor|merchant_level=1|rarity=common|price=25
+MA004|Hide|description=Animal hide. Useful in the wild.|skill_mod=Tracking+1|tag=material,armor|merchant_level=1|rarity=common|price=30
+
+# Merchant Level 2
+MA005|Iron|description=Solid and commanding.|skill_mod=Command+1|tag=material,armor|merchant_level=2|rarity=common|price=60
+MA006|Bone|description=Occult materials. Commands primal respect.|skill_mod=Arcana+1,Survival+1,Influence-1|tag=material,armor|merchant_level=2|rarity=uncommon|price=65
+MA007|Leather|description=Flexible medium armor. Favored by subtle operators.|skill_mod=Subterfuge+1,Influence+1,Command-1|tag=material,armor|merchant_level=2|rarity=uncommon|price=60
+
+# Merchant Level 3
+MA008|Steel|description=Hardened shell. Command presence and durability.|stat_mod=Health+5|skill_mod=Command+2,Subterfuge-2|tag=material,armor|merchant_level=3|rarity=uncommon|price=90
+MA009|Silver|description=Holy-aligned metal. Mental fortitude.|stat_mod=Will+1|skill_mod=Lore+1,Survival-1|tag=material,armor|merchant_level=3|rarity=uncommon|price=100
+MA010|Rune|description=Magically inscribed armor. Arcane defense.|stat_mod=Will+1|skill_mod=Arcana+1,Athletics-1|tag=material,armor|merchant_level=3|rarity=uncommon|price=110
+MA011|Carapace|description=Chitin-based natural armor. Responsive to environment.|stat_mod=Will-1|skill_mod=Perception+1,Athletics+1|tag=material,armor|merchant_level=3|rarity=uncommon|price=100
+
+# Merchant Level 4
+MA012|Gold|description=Prestigious and conspicuous. Strong social presence.|stat_mod=Will+1|skill_mod=Influence+2,Command+1,Subterfuge-3|tag=material,armor|merchant_level=4|rarity=rare|price=140
+MA013|Crystal|description=Magically resonant but fragile craftsmanship.|stat_mod=Magic+1|skill_mod=Arcana+1,Strength-1,Craft-1|tag=material,armor|merchant_level=4|rarity=rare|price=140
+MA014|Damascus|description=Master-forged layered steel. Skilled wearers only.|stat_mod=Fight+1|skill_mod=Craft+1,Athletics+1|tag=material,armor|merchant_level=4|rarity=rare|price=150
+MA015|Shadoweave|description=Darkwoven cloth. Movement and stealth priority.|stat_mod=Move+1|skill_mod=Subterfuge+3,Influence-1|tag=material,armor|merchant_level=4|rarity=rare|price=130
+
+# Merchant Level 5
+MA016|Mithril|description=Elite metal with agility and evasion bonuses.|stat_mod=Move+1,Evasion+1|skill_mod=Subterfuge+2|tag=material,armor|merchant_level=5|rarity=legendary|price=180
+MA017|Starforged|description=Stellar alloy. Unmatched perception and tracking.|stat_mod=Will+1|skill_mod=Perception+2,Tracking+2,Lore+1|tag=material,armor|merchant_level=5|rarity=legendary|price=200
+MA018|Adamant|description=Heaviest known metal. Immovable HP engine.|stat_mod=Health+10|skill_mod=Strength+2,Athletics-3|tag=material,armor|merchant_level=5|rarity=legendary|price=210
+MA019|Dragonscale|description=Legendary hide. Bonus armor and survival instinct.|stat_mod=Armor+1|skill_mod=Survival+1,Strength+1,Lore-2|tag=material,armor|merchant_level=5|rarity=legendary|price=200
+MA020|Diamond|description=Crystalline masterwork. Pure mental fortitude and craft.|stat_mod=Will+3|skill_mod=Craft+2,Arcana+1|tag=material,armor|merchant_level=5|rarity=legendary|price=195
+MA021|Auric|description=Gold-alloy magic-conductor. Command and influence.|stat_mod=Magic+1|skill_mod=Command+1,Influence+2|tag=material,armor|merchant_level=5|rarity=legendary|price=190
