@@ -10,12 +10,12 @@ What this hub does
 - Writes full tracebacks to ./output/hub_errors.log for debugging.
 
 Optional CLI shortcuts
-  python rbtl_hub.py --mode scenario
-  python rbtl_hub.py --mode campaign
-  python rbtl_hub.py --mode allies
-  python rbtl_hub.py --mode loot
-  python rbtl_hub.py --validate
-  python rbtl_hub.py --seed 12345
+  python bare_hub.py --mode scenario
+  python bare_hub.py --mode campaign
+  python bare_hub.py --mode allies
+  python bare_hub.py --mode loot
+  python bare_hub.py --validate
+  python bare_hub.py --seed 12345
 
 Notes
 - Scenario uses a shared DataBundle loaded once by the hub.
@@ -33,8 +33,8 @@ import traceback
 from dataclasses import dataclass
 from typing import Callable, Optional
 
-from rbtl_cli import BACK, QUIT, RESTART, prompt_choice_nav
-from rbtl_data import DataBundle, load_data_bundle
+from bare_cli import BACK, QUIT, RESTART, prompt_choice_nav
+from bare_data import DataBundle, load_data_bundle
 
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -104,8 +104,8 @@ def _apply_seed(seed: Optional[int]) -> None:
 
 def run_scenario(data: DataBundle, project_root: str) -> None:
     """Scenario / Encounter generator (uses shared DataBundle)."""
-    from rbtl_cli import run_cli
-    from rbtl_core import generate_scenario
+    from bare_cli import run_cli
+    from bare_core import generate_scenario
 
     try:
         inputs = run_cli(data)  # may raise SystemExit on quit
@@ -136,15 +136,15 @@ def _run_main(module_name: str) -> None:
 
 
 def run_campaign(_: Optional[DataBundle], __: str) -> None:
-    _run_main("rbtl_main_campaign")
+    _run_main("bare_main_campaign")
 
 
 def run_allies(_: Optional[DataBundle], __: str) -> None:
-    _run_main("rbtl_main_allies")
+    _run_main("bare_main_allies")
 
 
 def run_loot_shop(_: Optional[DataBundle], __: str) -> None:
-    _run_main("rbtl_main_loot")
+    _run_main("bare_main_loot")
 
 
 def _data_summary(data: Optional[DataBundle]) -> str:
