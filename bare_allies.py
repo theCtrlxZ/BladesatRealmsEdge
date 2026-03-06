@@ -10,9 +10,9 @@ import random
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-from rbtl_data import DataBundle, parse_int_maybe
-from rbtl_core import weighted_choice, apply_stat_mods, parse_statline, STAT_KEYS
-from rbtl_loot import roll_built_items
+from bare_data import DataBundle, parse_int_maybe
+from bare_core import weighted_choice, apply_stat_mods, parse_statline, STAT_KEYS
+from bare_loot import roll_built_items
 
 OUTPUT_DIR = "output"
 
@@ -202,7 +202,7 @@ def _pool_traits(data: DataBundle, required: Optional[Set[str]]) -> List[Dict[st
 
 def _collect_roll_fields(entry: Dict[str, Any]) -> List[str]:
     """
-    Primary: entry["roll"] (now populated by rbtl_data for roll:... pipe chunks)
+    Primary: entry["roll"] (now populated by bare_data for roll:... pipe chunks)
     Fallback: directives that start with roll:
     """
     out: List[str] = []
