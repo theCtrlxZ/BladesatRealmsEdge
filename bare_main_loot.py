@@ -1,9 +1,9 @@
 # bare_main_loot.py
 import os
 
-from rbtl_data import load_data_bundle
-from rbtl_cli import prompt_choice_nav, prompt_int_nav, BACK, RESTART, QUIT
-from rbtl_loot import generate_loot, generate_shop
+from bare_data import load_data_bundle
+from bare_cli import prompt_choice_nav, prompt_int_nav, BACK, RESTART, QUIT
+from bare_loot import generate_loot, generate_shop
 
 
 def _default_merchant_level_for_settlement(settlement: str) -> int:
