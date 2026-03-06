@@ -3,8 +3,8 @@ import hashlib
 import random
 from typing import Any, Dict, List, Optional, Tuple
 
-from rbtl_data import s_get, s_get_bool, s_get_float, s_get_int, s_get_list
-from rbtl_shared import (
+from bare_data import s_get, s_get_bool, s_get_float, s_get_int, s_get_list
+from bare_shared import (
     DIFFICULTY_ORDER,
     gather_threats_from_units,
     pick_scenario_type_id,
@@ -23,7 +23,7 @@ QUIT = "__QUIT__"
 # Settings helpers (read-only)
 # ----------------------------
 def s_get_str(settings: Dict[str, str], key: str, default: str = "") -> str:
-    """Return a stripped string for CLI prompts (wrapper around rbtl_data.s_get)."""
+    """Return a stripped string for CLI prompts (wrapper around bare_data.s_get)."""
     return (s_get(settings, key, default) or "").strip()
 
 
@@ -34,7 +34,7 @@ def _parse_campaign_key(raw: str) -> Optional[Dict[str, Any]]:
     parts = [p for p in key.split("-") if p != ""]
     if len(parts) < 8:
         return None
-    if parts[0] not in {"BARE", "RBTL"} or parts[1] != "CAMP":
+    if parts[0] not in {"BARE", "bare"} or parts[1] != "CAMP":
         return None
 
     seed = None
